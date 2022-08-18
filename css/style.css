@@ -32,3 +32,27 @@ body {
 .navbar-dark {
     background-color: #512DA8;
 }
+.reserve h2{
+    padding: 10px;
+    color: white;
+}
+.reserve {
+    border-radius: 5px;
+}
+.radio {
+    margin: 0 15px;
+}
+.btn {
+    padding: 10px 50px;
+    font-weight: 600;
+    margin-left: 15%;
+}
+a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.jumbotron a:hover {
+    text-decoration: none;
+    color: peachpuff;
+}

@@ -40,9 +40,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <button class="btn btn-warning"><a href="#Reserve">Reserve Table</a></button>
                 </div>
             </div>
         </div>
@@ -57,7 +59,7 @@
                 <div class="media">
                     <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2> 
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -66,17 +68,17 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-12 col-sm order-sm-first col-md">
-                <div class="media">
-                    <img src="img/buffet.png" class="d-flex mr-3 img-thumbnail align-self-center">
+            <div class="col-12 col-sm col-md">
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
                 </div>
+                <div class="media">
+                    <img src="img/buffet.png" class="d-flex mr-3 img-thumbnail align-self-center">
             </div>
         </div>
 
@@ -94,6 +96,54 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container" id="Reserve" style="font-weight: 600;">
+    <div class="row row-content">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 rounded border">
+            <form action="">
+                <div class="form-group row">
+                <div class="col-sm bg-warning reserve">
+                    <h2 class="reserve">Reserve a Table</h2>
+                </div>
+            </div>
+                <div class="form-group row">
+                    <div class="col-md-2 col-12">
+                        <p>Number of Guests</p>
+                    </div>
+                        <div class="col-md col-12">
+                            <input type="radio" class="radio" value="1">1
+                            <input type="radio" class="radio" value="2">2
+                            <input type="radio" class="radio" value="3">3
+                            <input type="radio" class="radio" value="4">4
+                            <input type="radio" class="radio" value="5">5
+                            <input type="radio" class="radio" value="6">6
+                        </div>
+                 </div>
+                <div class="form-group row">
+                    <div class="col-md-2">
+                        <p>Date and Time</p>
+                    </div>
+                    <div class="col-sm-5 col-md-4">
+                        <input type="text" class="form-control" name="date" placeholder="Date">
+                    </div>
+
+                    <div class="col-sm-5 col-md-4">
+                        <input type="text" class="form-control" name="time"
+                        placeholder="Time">
+                    </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 5%;">
+                    <div class="col-md-2"></div>
+                    <div class="col-md mb">
+                        <button class="btn btn-primary">Reserve</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
         </div>
     </div>
 
