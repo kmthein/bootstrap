@@ -189,9 +189,19 @@
             </div>
             <a href="#mycarousel" class="carousel-control-prev" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
             <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+            <div class="btn-group" id="carouselButton">
+                <button id="carousel-pause" class="btn btn-danger">
+                    <span class="fa fa-pause"></span>
+                </button>
+                <button id="carousel-play" class="btn btn-danger">
+                    <span class="fa fa-play"></span>
+                </button>
+            </div>    
+        </div>
+            
         </div>
     </div>
-</div>
+
 </div>
 
     <div class="container">
@@ -343,9 +353,23 @@
     
     <script>
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
+            $('#mycarousel').carousel({interval: 2000});
+            $('#carousel-pause').click(function(){
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function(){
+                $('#mycarousel').carousel('cycle');
+            });
         })
     </script>
+    <!-- <script>
+        $('#mycarousel').carousel({interval:2000});
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script> -->
 </body>
 
 </html>
