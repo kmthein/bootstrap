@@ -42,10 +42,17 @@ body {
 .radio {
     margin: 0 15px;
 }
-.btn {
+.jumbotron .btn {
     padding: 10px 50px;
     font-weight: 600;
     margin-left: 15%;
+}
+.form-row .btn {
+    margin-left: 10px;
+}
+.form-row {
+    justify-content: flex-end;
+    margin-right: 10%;
 }
 a {
     text-decoration: none;
@@ -55,4 +62,10 @@ a {
 .jumbotron a:hover {
     text-decoration: none;
     color: peachpuff;
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
 }
