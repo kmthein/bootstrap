@@ -84,12 +84,75 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning nav-link btn-block" role="button" data-toggle="tooltip" data-html="true" title="Or Call us <br>at <strong>+9519184914</strong>" data-placement="bottom" href="#Reserve">Reserve Table</a>
-                    
+                    <a class="btn btn-warning nav-link btn-block" role="button" data-toggle="modal" data-target="#ReserveForm" href="#Reserve">Reserve Table</a>                    
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="modal fade" role="dialog" id="ReserveForm">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="reserve">Reserve a Table</h2>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group row">
+                        <div class="col-md-2 col-12">
+                            <p>Number of Guests</p>
+                        </div>
+                            <div class="col-md col-12">
+                                <input type="radio" name="reserve" class="radio" value="1">1
+                                <input type="radio" name="reserve" class="radio" value="2">2
+                                <input type="radio" name="reserve" class="radio" value="3">3
+                                <input type="radio" name="reserve" class="radio" value="4">4
+                                <input type="radio" name="reserve" class="radio" value="5">5
+                                <input type="radio" name="reserve" class="radio" value="6">6
+                            </div>
+                     </div>
+                     <div class="form-group row">
+                        <div class="col-md-2">
+                            <p>Section</p>
+                        </div>
+                        <div class="col-sm-5 col-md-4">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="section" id="non-smoking" value="non-smoking" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger active">
+                                    <input type="radio" name="section" id="smoking" value="smoking" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <div class="col-md-2">
+                            <p>Date and Time</p>
+                        </div>
+                        <div class="col-sm-5 col-md-4">
+                            <input type="text" class="form-control" name="date" placeholder="Date">
+                        </div>   
+                        <div class="col-sm-5 col-md-4">
+                            <input type="text" class="form-control" name="time"
+                            placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-bottom: 5%;">
+                        <div class="col-md-2"></div>
+                        <div class="col-md">
+                            <button type="button" class="btn btn-secondary" class="close" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                </div>
+            </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="container">
     <div class="row row-content">
